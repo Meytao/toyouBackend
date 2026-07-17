@@ -1,0 +1,6 @@
+fastapi~=0.139.0
+SQLAlchemy~=2.0.51
+PyJWT~=2.13.0
+python-dotenv~=1.2.2
+pydantic-settings~=2.14.2
+pydantic~=2.13.4
