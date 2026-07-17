@@ -13,7 +13,7 @@ class APIError(Exception):
 
 
 def ok(data=None) -> dict:
-    return {"code": 0, "message": "ok", "data": data}
+    return {"code": 200, "message": "ok", "data": data}
 
 
 def fail(code: int, message: str) -> dict:
