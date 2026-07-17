@@ -4,7 +4,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.api import auth
+from app.api import user
 from app.config.database import ensure_database_exists, create_tables
 from app.config.settings import settings
 from app.utils import response
@@ -47,7 +47,7 @@ app.add_middleware(
 )
 
 # 注册认证路由
-app.include_router(auth.router)
+app.include_router(user.router)
 
 
 @app.get("/")
